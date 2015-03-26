@@ -61,3 +61,11 @@ def sum_of_squares_odd(n):
 #R-1.7
 def sum_of_squares_odd2(n):
 		return sum(n * n for n in range(n) if is_odd(n))
+
+#R-1.8
+def pos_to_nex(index,list):
+	return index - len(list)
+
+def neg_to_pos(index, list):
+    return len(list) + index
+    
