@@ -1,3 +1,6 @@
+# For exercise R-1.12
+import random
+
 #R-1.1
 def is_multiple(n, m):
 	return n % m == 0
@@ -68,3 +71,19 @@ def pos_to_nex(index,list):
 
 def neg_to_pos(index, list):
     return index + len(list)
+
+#R-1.9
+# print range(50,81,10)
+
+#R-1.10
+#print (range(8, -9, -2))
+
+#R-1.11
+#[2**n for n in range(9)]
+
+#R-1.12
+# random.choice(data) gives you a value from specified data
+# random.randrange(number) gives you a number in range
+# I think the idea is to let randrange pick the index of a list, mimicing choice
+def random_choice(data):
+    return data[random.randrange(len(data))]
