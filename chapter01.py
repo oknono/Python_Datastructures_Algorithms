@@ -53,4 +53,11 @@ def sum_of_squares3(n):
 
 #R-1.6
 def sum_of_squares_odd(n):
+	sum = 0
+	for n in range(n):
+		if is_odd(n):
+		    sum += n * n
+	return sum
+#R-1.7
+def sum_of_squares_odd2(n):
 		return sum(n * n for n in range(n) if is_odd(n))
