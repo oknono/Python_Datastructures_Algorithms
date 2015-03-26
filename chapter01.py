@@ -27,12 +27,10 @@ def minmax(data):
 			max = item
 	return min, max
 
-#R-1.4 - using resursion
+#R-1.4 - using resursion - n has to be larger than 1
+# Fix this so it work for value 1
 def sum_of_squares(n):
-	if n == 1:
-		return 0
-	else:
-		return ((n - 1) * (n - 1)) + sum_of_squares(n-1)
+    return 0 if n == 1 else ((n - 1) * (n - 1)) + sum_of_squares(n-1)
 
 #R-1.4
 def sum_of_squares2(n):
