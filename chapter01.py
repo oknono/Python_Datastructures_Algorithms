@@ -11,10 +11,16 @@ def is_even(k):
 	else:
 	    return is_even(k-2)
 
-# extra function for 1.6
+#R-1.2 - with modulo
+def is_even2(k):
+	return k % 2 == 0
 
+# extra function for 1.6
 def is_odd(k):
 	return not is_even(k)
+
+def is_odd2(k):
+     return k % 2 != 0  
 
 #R-1.3 - assumes input is a list of integers
 def minmax(data):
