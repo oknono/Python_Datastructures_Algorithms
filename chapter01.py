@@ -11,6 +11,11 @@ def is_even(k):
 	else:
 	    return is_even(k-2)
 
+# extra function for 1.6
+
+def is_odd(k):
+	return not is_even(k)
+
 #R-1.3 - assumes input is a list of integers
 def minmax(data):
 	min = data[0]
@@ -30,5 +35,10 @@ def sum_of_squares(n):
 		return (n * n) + sum_of_squares(n-1)
 
 #R-1.4 - using list comprehension
+#R-1.5
 def sum_of_squares2(n):
 	return sum(n * n for n in range(n + 1))
+
+#R-1.6
+def sum_of_squares3(n):
+	return sum(n * n for is_odd(n) in range(n + 1))
