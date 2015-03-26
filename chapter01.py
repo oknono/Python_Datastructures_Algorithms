@@ -30,15 +30,23 @@ def minmax(data):
 #R-1.4 - using resursion
 def sum_of_squares(n):
 	if n == 1:
-		return 1
+		return 0
 	else:
-		return (n * n) + sum_of_squares(n-1)
+		return ((n - 1) * (n - 1)) + sum_of_squares(n-1)
+
+#R-1.4
+def sum_of_squares2(n):
+	sum = 0
+	for n in range(n):
+		sum += n * n
+	return sum
+
 
 #R-1.4 - using list comprehension
 #R-1.5
-def sum_of_squares2(n):
-	return sum(n * n for n in range(n + 1))
+def sum_of_squares3(n):
+	return sum(n * n for n in range(n))
 
 #R-1.6
-def sum_of_squares3(n):
-	return sum(n * n for is_odd(n) in range(n + 1))
+def sum_of_squares4(n):
+		return sum(n * n for n in range(n) if is_odd(n) == True)
