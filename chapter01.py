@@ -67,5 +67,4 @@ def pos_to_nex(index,list):
 	return index - len(list)
 
 def neg_to_pos(index, list):
-    return len(list) + index
-    
+    return index + len(list)
