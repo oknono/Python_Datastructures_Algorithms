@@ -44,6 +44,20 @@ def unique(data):
     return True
 
 
+# C-1.16 
+# def scale(data, factor):
+#     for j in range(len(data)):
+#          data[j] ￼ = factor
+# In this function we manipulate a list element - chaging the list
+# list and scale(list,factor) have smae ID
+# With function with exercise, a None is returned
+
+#C-1.18
+# List comprehension, start with 0 end with 90, + 2, +4, +6, +8 etc.
+# Basically list is product of list1 = range(10)[0 ..9] 
+# and list2 = range(1,11) [1..10]
+# print [ n * (n - 1) for n in range(1, 11)]
+
 if __name__ == "__main__":
     print reverse_list([1, 2, 3, 4]) == [4, 3, 2, 1]
     print odd_sequence([1, 2, 3, 7]) == (2, 3)
