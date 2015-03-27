@@ -52,11 +52,18 @@ def unique(data):
 # list and scale(list,factor) have smae ID
 # With function with exercise, a None is returned
 
-#C-1.18
+# C-1.18
 # List comprehension, start with 0 end with 90, + 2, +4, +6, +8 etc.
 # Basically list is product of list1 = range(10)[0 ..9] 
 # and list2 = range(1,11) [1..10]
+
 # print [ n * (n - 1) for n in range(1, 11)]
+
+# C-1.19
+# Ascii for 'a' to 'z' is 97 - 122. Char(97) gives 'a'
+# ord('a') gives 97
+
+# print [chr(n) for n in range(97, 123)]
 
 if __name__ == "__main__":
     print reverse_list([1, 2, 3, 4]) == [4, 3, 2, 1]
