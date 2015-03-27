@@ -1,10 +1,10 @@
 # C-1.13 
 # print name_list.reverse()
 
-def reverse_list(data):
-	return data
-
-print reverse_list([1, 2, 3, 4])
+# def reverse_list(data):
+#	return data
+#
+# print reverse_list([1, 2, 3, 4])
 
 # C-1.14 Write a short Python function that takes a sequence of integer
 # values and determines if there is a distinct pair of numbers in the
@@ -75,8 +75,8 @@ print reverse_list([1, 2, 3, 4])
 
 # C-1.24
 
-def count_vowel(word):  
-    return sum(1 for letter in word if letter in 'aeoui')
+# def count_vowel(word):  
+#    return sum(1 for letter in word if letter in 'aeoui')
 #if __name__ == "__main__":
 #    print reverse_list([1, 2, 3, 4]) == [4, 3, 2, 1]
 #    print odd_sequence([1, 2, 3, 7]) == (2, 3)
