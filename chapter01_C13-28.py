@@ -72,3 +72,14 @@ def no_duplicates(data):
 # TO DO
 
 # C-1.21 TO DO
+
+
+# C-1.22 Write a short Python program that takes two arrays a and b of length n storing
+# int values, and returns the dot product of a and b
+def multiply_list(data1, data2):
+    data3 = []
+    for index in range(len(data1)):
+        data3.append(data1[index]*data2[index])
+    return data3
+
+# print multiply_list([1,2,3,4,5,6],[2,3,4,5,6,7])
