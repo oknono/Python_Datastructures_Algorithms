@@ -21,3 +21,21 @@ def is_odd(k):
     return k % 2 != 0
 
 # print odd_sequence([1,2,3,4,5,8,9,11,14,15,19])
+
+
+# C-1.15 Write a Python function that takes a sequence of numbers
+# and determines if all the numbers are different from each other
+# (that is, they are distinct)
+
+def no_duplicates(data):
+    new_list = []
+    for index in range(len(data)):
+        if data[index] in new_list:
+            return False
+        else:
+            new_list.append(data[index])
+    return True
+
+# print no_duplicates([])
+# print no_duplicates([1, 2, 3, 4, 5, 6])
+# print no_duplicates([1, 2, 3, 4, 5, 6, 4])
