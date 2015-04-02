@@ -83,3 +83,12 @@ def multiply_list(data1, data2):
     return data3
 
 # print multiply_list([1,2,3,4,5,6],[2,3,4,5,6,7])
+
+# C-1.23 TO DO
+
+# C-1.24
+
+def count_vowel(word):  
+    return sum(1 for letter in word if letter in 'aeoui')
+
+# print count_vowel('apple tree ') 
