@@ -39,7 +39,7 @@ def minmax(data):
 #R-1.4 - using resursion - n has to be larger than 1
 # Fix this so it work for value 1
 def sum_of_squares(n):
-    return 0 if n == 1 else ((n - 1) * (n - 1)) + sum_of_squares(n-1)
+    return 0 if n == 0 else ((n * n) + sum_of_squares(n-1))
 
 #R-1.4
 def sum_of_squares2(n):
@@ -66,9 +66,13 @@ def sum_of_squares_odd2(n):
 		return sum(n * n for n in range(n) if is_odd(n))
 
 #R-1.8
+#  0,  1,  2,  3,  4 (len = 5)
+# -5, -4, -3, -2, -1
 def pos_to_nex(index,list):
 	return index - len(list)
 
+# -5, -4, -3, -2, -1 (len = 5)
+#  0,  1,  2,  3,  4
 def neg_to_pos(index, list):
     return index + len(list)
 
