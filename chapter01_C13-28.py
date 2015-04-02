@@ -86,9 +86,30 @@ def multiply_list(data1, data2):
 
 # C-1.23 TO DO
 
-# C-1.24
+# C-1.24 Write a short Python function that counts the number of vowels in a given
+# character string.
 
 def count_vowel(word):  
     return sum(1 for letter in word if letter in 'aeoui')
 
 # print count_vowel('apple tree ') 
+
+# C-1.25 WriteashortPythonfunctionthattakesastrings,representingasentence,
+# and returns a copy of the string with all punctuation removed.
+def remove_punctuation(word):
+    return ''.join(letter for letter in word if letter not in "\"\'\,\.\:\;\?\!")
+
+# print remove_punctuation("Let's try, Mike.")
+
+# C-1.26 Write a short program that takes as input three integers, a, b, and c,
+# from the console and determines if they can be used in a correct arithmetic formula
+def correct(a, b, c):
+    return (a + b == c) or (b + c == a) or (a + c == b) or (a * b == c) or \
+           (a * c == b) or (b * c == a)
+
+# print correct(3,2,1)
+# print correct(1,4,2)
+
+# C-1.27 TO DO
+# C-1.28 TO DO
+
