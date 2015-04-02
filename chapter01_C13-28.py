@@ -62,4 +62,13 @@ def no_duplicates(data):
 # Ascii for 'a' to 'z' is 97 - 122. Char(97) gives 'a'
 # ord('a') gives 97
 
-print [chr(n) for n in range(97, 123)]
+# print [chr(n) for n in range(97, 123)]
+
+# C-1.20 Shuffle a list using only randint(begin, end)
+# start with a list - reassign each item to a new index.
+# We start with n possible indices, and these shrink
+# The issue I have is that I can't say between 1 and 5, but not three
+# If I need to reuse indices, best way to do so. Every element needs to be in new list
+# TO DO
+
+# C-1.21 TO DO
