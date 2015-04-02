@@ -48,5 +48,13 @@ def no_duplicates(data):
 # def scale(data, factor):
 #    for j in range(len(data)):
 #        data[j] *= factor
-a
+#
 # print scale([1, 20, 300, 4000], 2)
+
+# C-1.18
+# List comprehension, start with 0 end with 90, + 2, +4, +6, +8 etc.
+# Basically list is product of list1 = range(10) -> [0 ..9] 
+# and list2 = range(1,11) -> [1..10]
+
+print [ n * (n - 1) for n in range(1, 11)]
+
