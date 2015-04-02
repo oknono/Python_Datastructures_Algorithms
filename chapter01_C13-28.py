@@ -56,5 +56,10 @@ def no_duplicates(data):
 # Basically list is product of list1 = range(10) -> [0 ..9] 
 # and list2 = range(1,11) -> [1..10]
 
-print [ n * (n - 1) for n in range(1, 11)]
+# print [ n * (n - 1) for n in range(1, 11)]
 
+# C-1.19
+# Ascii for 'a' to 'z' is 97 - 122. Char(97) gives 'a'
+# ord('a') gives 97
+
+print [chr(n) for n in range(97, 123)]
