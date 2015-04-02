@@ -73,6 +73,8 @@
 #	return data3
 #
 
+# C-1.23 TO DO
+
 # C-1.24
 
 # def count_vowel(word):  
@@ -83,3 +85,15 @@
 #    print unique([1, 2, 3, 4]) == True
 #    print unique([1, 2, 3, 4, 2, 0]) == False
 #    print multiply_list([1,2,3,4,5],[2,3,4,5,6])
+
+# C-1.25
+#def remove_punctuation(word):
+#    return ''.join(letter for letter in word if letter not in "\"\'\,\.\:\;\?\!"
+
+# C-1.26
+# def correct(a, b, c):
+# return (a + b == c) or (b + c == a) or (a + c == b) or (a * b == c) or \
+#       (a * c == b) or (b * c == a)
+
+# C-1.27 TO DO
+# C-1.28 TO DO
